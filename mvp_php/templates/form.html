@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>TITLE</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+  <title>To Do List</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.php">WIW</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </nav>
+    
+ <div class="col-lg-6 m-auto">
+ 
+ <form method="post">
+ 
+ <br><br><div class="card">
+ 
+ <div class="card-header bg-primary">
+ <h1 class="text-white text-center">  CRUD Pasien </h1>
+ </div><br>
+
+ <input type="hidden" name="id" value="VAL_ID">
+
+ <label> NIK: </label>
+ <input type="text" name="nik" value="VAL_NIK" class="form-control"> <br>
+
+ <label> Nama: </label>
+ <input type="text" name="nama" value="VAL_NAMA" class="form-control"> <br>
+
+ <label> Tempat: </label>
+ <input type="text" name="tempat" value="VAL_TEMPAT" class="form-control"> <br>
+ 
+ <label> Tanggal Lahir: </label>
+ <input type="date" name="tl" value="VAL_TL" class="form-control "> <br>
+ 
+ <label> Gender: </label>
+ <select class="custom-select form-control" name="gender">
+    <!--<option selected>VAL_GENDER</option>
+    <option>Perempuan</option>
+    <option>Laki-laki</option>-->
+    VAL_GENDER
+ </select> <br>
+
+ <label> Email: </label>
+ <input type="text" name="email" value="VAL_EMAIL" class="form-control"> <br>
+
+ <label> No Telepon: </label>
+ <input type="text" name="telp" value="VAL_TELP" class="form-control"> <br>
+
+ <button class="btn btn-success" type="submit" name="submit"> CRUD </button><br>
+ <a class="btn btn-info" type="submit" name="cancel" href="index.php"> Cancel </a><br>
+
+ </div>
+ </form>
+ </div>
+</body>
+</html>
